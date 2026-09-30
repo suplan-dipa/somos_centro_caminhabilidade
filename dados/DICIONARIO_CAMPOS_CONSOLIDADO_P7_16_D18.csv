@@ -1,0 +1,139 @@
+﻿campo;tipo_sql;rotulo;unidade;fonte;cuidado_interpretativo;politica_ausencia
+id_trecho;INTEGER;Id trecho;;;;
+trecho_uid;TEXT;Trecho uid;;;;
+logradouro;TEXT;Logradouro;;;;
+subarea;TEXT;Subarea;;;;
+tipo_logradouro;TEXT;Tipo logradouro;;;;
+categorias;TEXT;Categorias;;;;
+comprimento_canonico_m;REAL;Comprimento canonico m;;;;
+comprimento_m_p75;REAL;Comprimento m p75;;;;
+dif_comprimento_p75_canon_m;REAL;Dif comprimento p75 canon m;;;;
+status_comprimento;TEXT;Status comprimento;;;;
+fonte_comprimento_canonico;TEXT;Fonte comprimento canonico;;;;
+passeio_media_m;REAL;Largura média do passeio;m;somos_centro_caminhabilidade_largura_calcadas / referência anterior;"Valor observado; não equivale automaticamente à faixa livre para pedestres.";nulo = desconhecido
+largura_via_m;REAL;Largura total registrada do trecho viário;m;somos_centro_caminhabilidade_largura_trecho / referência anterior;"Seção total disponível como contexto; não informa número de faixas.";nulo = desconhecido
+declividade_media_pct;REAL;Declividade longitudinal média;%;somos_centro_caminhabilidade_declividade_trecho / referência anterior;"Apoia diagnóstico; não substitui levantamento de acessibilidade.";nulo = desconhecido
+largura_final_recuo_m;REAL;Largura final prevista associada ao afastamento frontal;m;somos_centro_caminhabilidade_recuo_de_alinhamento / referência anterior;Confirmar instrumento vigente, lado e lote.;sem registro = desconhecido
+onibus_n_linhas_unicas_registradas;REAL;Linhas de ônibus registradas no trecho;linhas;somos_centro_caminhabilidade_itinerario_onibus / referência anterior;"Proxy de demanda/exposição; não equivale a fluxo de pedestres.";sem registro = desconhecido
+estacionamento_vagas_fisicas_alocadas;REAL;Vagas físicas regulamentadas associadas;vagas;somos_centro_caminhabilidade_estacionamento_via / referência anterior;Usar vagas físicas reconciliadas, não vagas rotativas por giro.;sem entidade = desconhecido
+acidentes_eventos_associados;REAL;Eventos de acidentes com pedestres associados;eventos;somos_centro_caminhabilidade_acidentes / referência anterior;Não é taxa de risco e não estabelece causalidade.;sem registro = desconhecido
+arborizacao_registros_aceitos;REAL;Registros arbóreos aceitos;registros;somos_centro_caminhabilidade_arborizacao / referência anterior;Ausência de registro não comprova ausência de árvore.;sem registro = desconhecido
+qtde_ponto;REAL;Pontos de ônibus agregados;pontos;fonte subsidiária F29 / referência anterior;Validar lado e acesso real.;nulo = desconhecido
+qtde_embar;REAL;Embarques agregados;embarques;fonte subsidiária F29 / referência anterior;Manter período da fonte explícito.;nulo = desconhecido
+qtde_estac;REAL;Estações de transporte agregadas;estações;fonte subsidiária / referência anterior;Distinguir operacional de planejada.;"zero/sem associação = ausência cadastral comprovada no escopo da fonte C7; ver classe_cobertura_c7 e limite_ausencia_c7"
+qtde_imove;REAL;Bens imóveis protegidos agregados;registros;fonte subsidiária F29 / referência anterior;Proximidade não comprova incidência sobre a frente do lote.;"zero/sem associação = ausência cadastral comprovada no escopo da fonte C7; ver classe_cobertura_c7 e limite_ausencia_c7"
+qtde_equip;REAL;Equipamentos públicos agregados;registros;fonte subsidiária F29 / referência anterior;Centroide não identifica necessariamente a entrada principal.;"zero/sem associação = ausência cadastral comprovada no escopo da fonte C7; ver classe_cobertura_c7 e limite_ausencia_c7"
+C_ARBORIZACAO_DEFICIT;REAL;C arborizacao deficit;;;;
+C_DIRETRIZ;REAL;C diretriz;;;;
+C_LARGURA_OPORT;REAL;C largura oport;;;;
+C_TRANSPORTE;REAL;C transporte;;;;
+C_SEGURANCA;REAL;C seguranca;;;;
+C_PATRIMONIO_COMPLEX;REAL;C patrimonio complex;;;;
+C_ESTAC_OPORT;REAL;C estac oport;;;;
+cardapio_n_p713;INTEGER;Cardapio n p713;;;;
+regras_ativas_n_p713;INTEGER;Regras ativas n p713;;;;
+regras_pendentes_n_p713;INTEGER;Regras pendentes n p713;;;;
+pendencias_campos_json;TEXT;Pendencias campos json;;;;
+regras_ativas_json;TEXT;Regras ativas json;;;;
+regras_pendentes_json;TEXT;Regras pendentes json;;;;
+cardapio_candidatas_n;INTEGER;Cardapio candidatas n;;;;
+cardapio_condicionais_n;INTEGER;Cardapio condicionais n;;;;
+cardapio_diretrizes_n;INTEGER;Cardapio diretrizes n;;;;
+cardapio_principal_id_p713;TEXT;Cardapio principal id p713;;;;
+cardapio_principal_status_p713;TEXT;Cardapio principal status p713;;;;
+cardapio_principal_prioridade_p713;REAL;Cardapio principal prioridade p713;;;;
+sentido_circulacao_c3;TEXT;Sentido circulacao c3;;;;
+sentido_relativo_c3;TEXT;Sentido relativo c3;;;;
+sentido_confianca_c3;TEXT;Sentido confianca c3;;;;
+conversoes_conflitantes_travessia_n;INTEGER;Conversões conflitantes na travessia;movimentos representados;rede de circulação tipo 2 + travessias canônicas + relações confiáveis grafo-no;Movimento permitido não é volume. Não mede fluxo, frequência, velocidade, capacidade ou probabilidade de sinistro.;"Trecho sem travessia canônica contextualizada = desconhecido; não converter em zero."
+qtde_estac_c7;INTEGER;Qtde estac c7;;;;
+qtde_equip_c7;INTEGER;Qtde equip c7;;;;
+qtde_imove_c7;INTEGER;Qtde imove c7;;;;
+patrimonio_percentil_c7;REAL;Patrimonio percentil c7;;;;
+arvores_canteiro_central_n_c7;INTEGER;Arvores canteiro central n c7;;;;
+estacao_ausencia_status_c7;TEXT;Estacao ausencia status c7;;;;
+equipamento_ausencia_status_c7;TEXT;Equipamento ausencia status c7;;;;
+anexo_viii_ausencia_status_c7;TEXT;Anexo viii ausencia status c7;;;;
+arvores_canteiro_central_ausencia_status_c7;TEXT;Arvores canteiro central ausencia status c7;;;;
+bens_protegidos_ausencia_status_c7;TEXT;Bens protegidos ausencia status c7;;;;
+sentido_ausencia_status_c7;TEXT;Sentido ausencia status c7;;;;
+estacionamento_presenca_c8;TEXT;Estacionamento presenca c8;;;;
+estacionamento_presenca_status_c8;TEXT;Estacionamento presenca status c8;;;;
+passeio_limitrofe_d16;INTEGER;Passeio limitrofe d16;;;;
+distancia_rede_borda_m_d16;REAL;Distancia rede borda m d16;;;;
+homologacao_rede_d16;TEXT;Homologacao rede d16;;;;
+acessos_veiculares_qtde;TEXT;Rebaixamentos de meio-fio/acessos veiculares conflitantes;quantidade;levantamento/cadastro;Apoia reorganização de acessos.;não estimar
+anexo_viii_n_registros;REAL;Incidência registrada do Anexo VIII;registros;somos_centro_caminhabilidade_anexo_viii;"Usar classificação e vínculo espacial; ausência não comprova inexistência.";"sem registro = desconhecido neste snapshot; zero só após cobertura e geometria integrais confirmadas"
+arborizacao_percentil;REAL;Percentil de densidade de registros arbóreos;percentil;arborizacao_densidade_100m;Somente onde cobertura cadastral for aceitável.;nulo = desconhecido
+arvores_canteiro_central_n;REAL;Árvores registradas em canteiro central;registros;somos_centro_caminhabilidade_arborizacao · local_plantio · associação espacial P1/P2;As categorias de local de plantio podem coexistir no mesmo trecho. Contagem zero significa ausência de registro associado, não comprovação de ausência física.;"zero/sem associação = ausência cadastral comprovada no escopo da fonte C7; ver classe_cobertura_c7 e limite_ausencia_c7"
+barreira_pedonal_comprovada;TEXT;Barreira à circulação de pedestres comprovada;;;;
+degraus_desniveis;TEXT;Degraus/desníveis indevidos;sim/não/quantidade;levantamento;Necessário para regra específica de regularização.;não estimar
+demanda_carga_descarga;TEXT;Demanda operacional de carga e descarga;classe;levantamento/comércio;Necessária para gestão de meio-fio.;não estimar
+drenagem_criticidade;TEXT;Pontos de alagamento/escoamento/insuficiência;classe;drenagem/SUDECAP;Necessária para priorizar SBN/drenagem.;não estimar
+eixo_paralelo_binario;TEXT;Existência de eixo paralelo apto a compor binário;sim/não;análise de rede;Condição essencial para avaliar binário.;não estimar
+embarques_classe;TEXT;Classe relativa de embarques;classe;qtde_embar;Faixas relativas entre pontos/trechos observados.;nulo = desconhecido
+equipamento_tema;TEXT;Tema/categoria do equipamento público;categoria;somos_centro_caminhabilidade_equipamentos_publicos;Permite regras específicas para educação, saúde e cultura.;"zero/sem associação = ausência cadastral comprovada no escopo da fonte C7; ver classe_cobertura_c7 e limite_ausencia_c7"
+estacao_situacao;TEXT;Situação da estação;categoria;somos_centro_caminhabilidade_estacao_transporte_publico;Separar existente, planejada e demais situações.;"zero/sem associação = ausência cadastral comprovada no escopo da fonte C7; ver classe_cobertura_c7 e limite_ausencia_c7"
+estacionamento_percentil;REAL;Percentil de densidade de vagas físicas;percentil;estacionamento_densidade_100m;"Variável quantitativa de posição relativa. Não usar percentil > 0 como teste de existência; usar estacionamento_presenca no C8.";nulo = desconhecido
+estrutura_transposicao;TEXT;Presença/tipo de transposição em desnível;categoria;somos_centro_caminhabilidade_estrutura_transposicao;Necessita avaliar acessibilidade real.;sem registro = desconhecido
+fachada_ativa_pct;TEXT;Extensão de fachada ativa no térreo;%;cadastro de fachadas/uso térreo;Apoia fruição, ativação e segurança percebida.;não estimar
+faixa_livre_m;TEXT;Largura da faixa livre para pedestres;m;índice de caminhabilidade/levantamento;Mais adequada que largura total do passeio para acessibilidade.;não estimar
+fluxo_pedestres;TEXT;Fluxo de pedestres;ped/h ou classe;contagens/modelagem;Eleva qualidade do ranking, especialmente permanência e travessias.;não estimar
+iluminancia_lux;TEXT;Iluminância/qualidade da iluminação de pedestres;lux/classe;SUDECAP/painel iluminação;Necessária para priorização objetiva de iluminação de segundo nível.;não estimar
+impermeabilizacao_espaco_publico_status;TEXT;Impermeabilizacao espaco publico status;;;;
+largura_via_percentil;REAL;Percentil da largura viária entre trechos observados;percentil;largura_via_m;Medida relativa para abrir estudo de redistribuição.;nulo = desconhecido
+mobiliario_status;TEXT;Mobiliario status;;;;
+obstaculos_qtde;TEXT;Obstáculos na faixa livre para pedestres;quantidade/classe;levantamento;Postes, caixas, mobiliário, comércio etc.;não estimar
+patrimonio_percentil;REAL;Percentil de densidade de bens culturais protegidos;percentil;patrimonio_densidade_100m;Complexidade preliminar, não incidência lote a lote.;"zero somente quando qtde_imove=0 por ausência cadastral comprovada; positivo com derivação ausente permanece desconhecido"
+pavimento_estado;TEXT;Condição do pavimento do passeio;classe;levantamento/índice de caminhabilidade;Buracos, irregularidade, escorregamento, continuidade.;não estimar
+permanencia_status;TEXT;Permanencia status;;;;
+permeabilidade_visual_pct;TEXT;Permeabilidade visual das fachadas/gradis;%;cadastro de fachadas;Apoia regras de interface entre lote e logradouro público.;não estimar
+recuo_oportunidade_m;REAL;Ganho potencial de largura associado ao afastamento frontal;m;max(largura_final_recuo_m - largura_via_m, 0);"É oportunidade preliminar; não autoriza ocupação/cessão.";qualquer entrada nula = desconhecido
+rede_cicloviaria_gap;TEXT;Lacuna/conexão cicloviária;classe;planejamento cicloviário;Apoia ciclovia, paraciclo e integração modal.;não estimar
+renovabilidade_lotes;TEXT;Testada de lotes renováveis;% da testada total;areas_renovaveis_ctm_v03 → can_renovabilidade_trecho;"Variável numérica D8. Não converter em BAIXA/MUITO_BAIXA sem limiares aprovados; conflitos da fonte são explicitados e ausência não equivale a baixa renovabilidade.";UNKNOWN
+seguranca_percentil;REAL;Percentil de ocorrência observada de sinistros;percentil;acidentes associados;Não é probabilidade de acidente.;sem registro = desconhecido
+semaforo_qtd_tr_s_foco;REAL;Travessias sem foco específico de pedestre;quantidade;somos_centro_caminhabilidade_sinalizacao_semaforica;Necessita validação da geometria da interseção.;sem associação = desconhecido
+semaforo_tp_travessia_pedestre;TEXT;Tipo de travessia de pedestre semaforizada;texto;somos_centro_caminhabilidade_sinalizacao_semaforica;Necessita associação à interseção/braço.;sem associação = desconhecido
+sentido_circulacao;TEXT;Sentido de circulação atual;categoria;sistema viário / operação de trânsito;Necessário para regras de sentido único de circulação/binário.;"SEM_CORRESPONDENCIA = desconhecido; sem circulação veicular somente com fonte afirmativa específica"
+testada_quadra_m;REAL;Extensão da testada/quadra;m;somos_centro_caminhabilidade_testadas_superior_a_200m;Indicador para atravessamentos de quadra.;sem registro = desconhecido
+transporte_percentil;REAL;Percentil de demanda/contexto de transporte;percentil;linhas/pontos/embarques/estações;"Componente transparente; registrar quais entradas estavam disponíveis.";sem entradas = desconhecido
+transposicao_acessibilidade_status;TEXT;Transposicao acessibilidade status;;;;
+volume_trafego;TEXT;Volume veicular / função viária;veíc./h ou classe;trânsito;Necessário para mudanças operacionais importantes.;não estimar
+estacionamento_presenca;TEXT;Presença de estacionamento regulamentado;categoria SIM/NAO;src_estacionamento → can_trechos.estacionamento_vagas_fisicas_alocadas;Presença cadastral não informa quantidade, disponibilidade, rotatividade, volume de uso nem possibilidade automática de supressão.;"sem associação no cadastro tratado como universo C8 = NAO; significa ausência cadastral no snapshot, não inexistência universal."
+potencial_renovacao_testada_pct;REAL;Potencial renovacao testada pct;;;;
+classe_renovabilidade_d9;TEXT;Classe renovabilidade d9;;;;
+viabilidade_face_d9;TEXT;Viabilidade face d9;;;;
+dist_estacao_todas_m;REAL;Dist estacao todas m;;;;
+n_estacao_todas_800m;INTEGER;N estacao todas 800m;;;;
+dist_estacao_implantada_m;REAL;Dist estacao implantada m;;;;
+n_estacao_implantada_800m;INTEGER;N estacao implantada 800m;;;;
+dist_estacao_operacional_m;REAL;Dist estacao operacional m;;;;
+n_estacao_operacional_800m;INTEGER;N estacao operacional 800m;;;;
+dist_estacao_planejada_m;REAL;Dist estacao planejada m;;;;
+n_estacao_planejada_800m;INTEGER;N estacao planejada 800m;;;;
+dist_estacao_projeto_basico_concluido_m;REAL;Dist estacao projeto basico concluido m;;;;
+n_estacao_projeto_basico_concluido_800m;INTEGER;N estacao projeto basico concluido 800m;;;;
+dist_onibus_m;REAL;Dist onibus m;;;;
+n_onibus_400m;INTEGER;N onibus 400m;;;;
+dist_equip_assistencia_social_m;REAL;Dist equip assistencia social m;;;;
+n_equip_assistencia_social_800m;INTEGER;N equip assistencia social 800m;;;;
+dist_equip_cultura_m;REAL;Dist equip cultura m;;;;
+n_equip_cultura_800m;INTEGER;N equip cultura 800m;;;;
+dist_equip_educacao_m;REAL;Dist equip educacao m;;;;
+n_equip_educacao_800m;INTEGER;N equip educacao 800m;;;;
+dist_equip_esporte_e_lazer_m;REAL;Dist equip esporte e lazer m;;;;
+n_equip_esporte_e_lazer_800m;INTEGER;N equip esporte e lazer 800m;;;;
+dist_equip_inclusao_digital_m;REAL;Dist equip inclusao digital m;;;;
+n_equip_inclusao_digital_800m;INTEGER;N equip inclusao digital 800m;;;;
+dist_equip_limpeza_urbana_m;REAL;Dist equip limpeza urbana m;;;;
+n_equip_limpeza_urbana_800m;INTEGER;N equip limpeza urbana 800m;;;;
+dist_equip_saude_m;REAL;Dist equip saude m;;;;
+n_equip_saude_800m;INTEGER;N equip saude 800m;;;;
+dist_equip_seguranca_alimentar_e_nutricional_m;REAL;Dist equip seguranca alimentar e nutricional m;;;;
+n_equip_seguranca_alimentar_e_nutricional_800m;INTEGER;N equip seguranca alimentar e nutricional 800m;;;;
+n_estacao_todas_400m_diag;INTEGER;N estacao todas 400m diag;;;;
+estacao_operacional_rede_800m;INTEGER;Estacao operacional rede 800m;;;;
+estacao_planejada_rede_800m;INTEGER;Estacao planejada rede 800m;;;;
+equipamentos_rede_800m;INTEGER;Equipamentos rede 800m;;;;
+destino_estacao_equip_rede_800m;INTEGER;Destino estacao equip rede 800m;;;;
+estacao_operacional_rede_400m;INTEGER;Estacao operacional rede 400m;;;;

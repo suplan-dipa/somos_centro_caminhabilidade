@@ -1,0 +1,8 @@
+P7.16-D18 - versão interna
+
+Arquivos:
+- MASTER_P7_16_D18_CONSOLIDADO.gpkg: GeoPackage consolidado.
+- CONSOLIDADO_TRECHOS_P7_16_D18.csv: atributos por trecho, sem geometria.
+- DICIONARIO_CAMPOS_CONSOLIDADO_P7_16_D18.csv: dicionário dos campos exportados.
+
+Ausência de informação não deve ser interpretada automaticamente como condição inadequada.
